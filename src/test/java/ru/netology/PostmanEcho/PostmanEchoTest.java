@@ -6,8 +6,9 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanEchoTest {
+
     @Test
-    void shouldReturnSendData() {
+        void shouldReturnSendData() {
         given()
                 .baseUri("https://postman-echo.com")
                 .body("Hi") // отправляемые данные (заголовки и query можно выставлять аналогично)
