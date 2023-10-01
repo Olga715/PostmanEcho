@@ -11,7 +11,7 @@ public class PostmanEchoTest {
         void shouldReturnSendData() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("Hi") // отправляемые данные (заголовки и query можно выставлять аналогично)
+                .body("Hello") // отправляемые данные (заголовки и query можно выставлять аналогично)
                 .when()
                 .post("/post")
                 .then()
